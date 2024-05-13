@@ -265,7 +265,6 @@ list(APPEND PLATFORM_TARGET_FILES
 list(APPEND PLATFORM_LIBRARIES
         Boost::dynamic_linking
         dl
-        numa
         pulse
         pulse-simple)
 
