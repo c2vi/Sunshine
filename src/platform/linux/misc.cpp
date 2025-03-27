@@ -880,7 +880,6 @@ namespace platf {
     return true;
   }
 
-<<<<<<< HEAD
   std::shared_ptr<display_t>
   display(mem_type_e hwdevice_type, const std::string &display_name, const video::config_t &config) {
 #ifdef SUNSHINE_BUILD_PORTAL
@@ -889,9 +888,6 @@ namespace platf {
       return portal_display(hwdevice_type, display_name, config);
     }
 #endif
-=======
-  std::shared_ptr<display_t> display(mem_type_e hwdevice_type, const std::string &display_name, const video::config_t &config) {
->>>>>>> c2420427 (style: adjust clang-format rules (#2186))
 #ifdef SUNSHINE_BUILD_CUDA
     if (sources[source::NVFBC] && hwdevice_type == mem_type_e::cuda) {
       BOOST_LOG(info) << "Screencasting with NvFBC"sv;
